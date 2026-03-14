@@ -1,12 +1,13 @@
 package com.example.auth.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "users")
+@Getter
 public class User {
 
     @Id
