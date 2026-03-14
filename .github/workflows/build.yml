@@ -24,7 +24,7 @@ jobs:
       - name: Build Backend
         run: |
           cd auth
-          mvn clean compile
+          mvn clean compile dependency:copy-dependencies
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v6
