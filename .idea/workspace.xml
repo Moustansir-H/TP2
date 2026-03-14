@@ -30,9 +30,9 @@
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3AvuZgTC8vl48wZYVNd1vwqLfAD" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -60,7 +60,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.editor",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -90,6 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773485422218</updated>
       <workItem from="1773485422905" duration="8181000" />
+      <workItem from="1773504102380" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de front tp2">
       <option name="closed" value="true" />
