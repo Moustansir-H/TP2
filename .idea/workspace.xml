@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f49dfa4-6b8e-4a56-ae30-c23097928360" name="Changes" comment="ajout de front tp2" />
+    <list default="true" id="5f49dfa4-6b8e-4a56-ae30-c23097928360" name="Changes" comment="ajout de front tp2">
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/com/example/auth/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/com/example/auth/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/com/example/auth/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/com/example/auth/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/com/example/auth/model/ApiResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/com/example/auth/service/AuthApiClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/com/example/auth/service/ClientValidationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/resources/com/example/auth/auth-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/resources/com/example/auth/auth-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-front/auth/src/main/resources/com/example/auth/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +117,7 @@
       <workItem from="1773485422905" duration="8181000" />
       <workItem from="1773504102380" duration="1176000" />
       <workItem from="1773505514641" duration="322000" />
-      <workItem from="1773506466356" duration="649000" />
+      <workItem from="1773506466356" duration="1185000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de front tp2">
       <option name="closed" value="true" />
