@@ -32,6 +32,14 @@ public class GlobalExceptionHandler {
         return buildResponse(HttpStatus.UNAUTHORIZED, ex.getMessage(), request);
     }
 
+    @ExceptionHandler(AccountLockedException.class)
+    public ResponseEntity<Map<String, Object>> handleAccountLocked(
+            AccountLockedException ex,
+            HttpServletRequest request) {
+
+        return buildResponse(HttpStatus.TOO_MANY_REQUESTS, ex.getMessage(), request);
+    }
+
     @ExceptionHandler(ResourceConflictException.class)
     public ResponseEntity<Map<String, Object>> handleConflict(
             ResourceConflictException ex,

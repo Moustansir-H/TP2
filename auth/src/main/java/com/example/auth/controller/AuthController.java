@@ -1,7 +1,6 @@
 package com.example.auth.controller;
 
 import com.example.auth.entity.User;
-import com.example.auth.exception.AuthenticationFailedException;
 import com.example.auth.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -18,12 +17,16 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/register")
-    public ResponseEntity<User> register(@RequestBody Map<String, String> request) {
+    public ResponseEntity<Map<String, Object>> register(@RequestBody Map<String, String> request) {
         String email = request.get("email");
         String password = request.get("password");
 
         User user = authService.register(email, password);
-        return new ResponseEntity<>(user, HttpStatus.CREATED);
+        return new ResponseEntity<>(Map.of(
+                "id", user.getId(),
+                "email", user.getEmail(),
+                "createdAt", user.getCreatedAt()
+        ), HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
@@ -31,11 +34,7 @@ public class AuthController {
         String email = request.get("email");
         String password = request.get("password");
 
-        boolean success = authService.login(email, password);
-
-        if (!success) {
-            throw new AuthenticationFailedException("Email ou mot de passe incorrect");
-        }
+        authService.login(email, password);
 
         return ResponseEntity.ok(Map.of(
                 "message", "Connexion réussie",
@@ -43,4 +42,3 @@ public class AuthController {
         ));
     }
 }
-
