@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f49dfa4-6b8e-4a56-ae30-c23097928360" name="Changes" comment="ajout de front tp2">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5f49dfa4-6b8e-4a56-ae30-c23097928360" name="Changes" comment="ajout de front tp2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +92,7 @@
       <workItem from="1773485422905" duration="8181000" />
       <workItem from="1773504102380" duration="1176000" />
       <workItem from="1773505514641" duration="322000" />
+      <workItem from="1773506466356" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de front tp2">
       <option name="closed" value="true" />
