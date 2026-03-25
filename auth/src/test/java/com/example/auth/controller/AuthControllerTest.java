@@ -1,6 +1,8 @@
 package com.example.auth.controller;
 
 import com.example.auth.entity.User;
+import com.example.auth.repository.AuthNonceRepository;
+import com.example.auth.repository.AuthTokenRepository;
 import com.example.auth.repository.UserRepository;
 import com.example.auth.service.HmacProofService;
 import com.example.auth.service.PasswordCipherService;
@@ -60,6 +62,8 @@ class AuthControllerTest {
     private static final String INVALID_TOKEN_MESSAGE = "Token invalide ou expiré";
 
     private final MockMvc mockMvc;
+    private final AuthNonceRepository authNonceRepository;
+    private final AuthTokenRepository authTokenRepository;
     private final UserRepository userRepository;
     private final ObjectMapper objectMapper;
     private final PasswordCipherService passwordCipherService;
@@ -68,12 +72,16 @@ class AuthControllerTest {
     @Autowired
     AuthControllerTest(
             MockMvc mockMvc,
+            AuthNonceRepository authNonceRepository,
+            AuthTokenRepository authTokenRepository,
             UserRepository userRepository,
             ObjectMapper objectMapper,
             PasswordCipherService passwordCipherService,
             HmacProofService hmacProofService
     ) {
         this.mockMvc = mockMvc;
+        this.authNonceRepository = authNonceRepository;
+        this.authTokenRepository = authTokenRepository;
         this.userRepository = userRepository;
         this.objectMapper = objectMapper;
         this.passwordCipherService = passwordCipherService;
@@ -82,7 +90,9 @@ class AuthControllerTest {
 
     @BeforeEach
     void setUp() {
-        userRepository.deleteAll();
+        authNonceRepository.deleteAllInBatch();
+        authTokenRepository.deleteAllInBatch();
+        userRepository.deleteAllInBatch();
     }
 
     @Test
