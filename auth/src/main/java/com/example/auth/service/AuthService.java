@@ -102,7 +102,7 @@ public class AuthService {
         if (validProof) {
             user.clearLockState();
             userRepository.save(user);
-            log.info("Connexion TP3 réussie pour {}", email);
+            log.info("Connexion réussie pour {}", email);
             return tokenService.issueToken(user);
         }
 

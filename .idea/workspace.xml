@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f49dfa4-6b8e-4a56-ae30-c23097928360" name="Changes" comment="ajout de front tp2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/AuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <workItem from="1774177132686" duration="10219000" />
       <workItem from="1774263511452" duration="1934000" />
       <workItem from="1774371331778" duration="3068000" />
-      <workItem from="1774441925353" duration="2297000" />
+      <workItem from="1774441925353" duration="3063000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de front tp2">
       <option name="closed" value="true" />
