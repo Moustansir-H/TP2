@@ -6,30 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5f49dfa4-6b8e-4a56-ae30-c23097928360" name="Changes" comment="ajout de front tp2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-front/tp-git/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-front/tp-git/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-front/tp-git/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-front/tp-git/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-front/tp-git/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-front/tp-git/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-front/tp-git/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/auth/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/AuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/PasswordHasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/PasswordHasher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/PasswordPolicyValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/example/auth/service/PasswordPolicyValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/test/java/com/example/auth/controller/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/test/java/com/example/auth/controller/AuthControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/AuthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/AuthApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/service/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/service/PasswordHasher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/service/PasswordHasher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/service/PasswordPolicyValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/service/PasswordPolicyValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +116,7 @@
       <workItem from="1774177132686" duration="10219000" />
       <workItem from="1774263511452" duration="1934000" />
       <workItem from="1774371331778" duration="3068000" />
-      <workItem from="1774441925353" duration="667000" />
+      <workItem from="1774441925353" duration="2297000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de front tp2">
       <option name="closed" value="true" />

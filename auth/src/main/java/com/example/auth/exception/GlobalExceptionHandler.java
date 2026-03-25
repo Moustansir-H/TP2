@@ -51,13 +51,9 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<Map<String, Object>> handleUnreadableBody(
-            HttpMessageNotReadableException ex,
             HttpServletRequest request) {
 
-        String message = ex.getMostSpecificCause() == null
-                ? "Payload JSON invalide"
-                : "Payload JSON invalide";
-        return buildResponse(HttpStatus.BAD_REQUEST, message, request);
+        return buildResponse(HttpStatus.BAD_REQUEST, "Payload JSON invalide", request);
     }
 
     private ResponseEntity<Map<String, Object>> buildResponse(
