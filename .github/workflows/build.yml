@@ -21,10 +21,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build Backend
+      - name: Build Backend + Tests + Coverage
         run: |
           cd auth
-          mvn clean compile dependency:copy-dependencies
+          mvn -B clean verify dependency:copy-dependencies
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v6
