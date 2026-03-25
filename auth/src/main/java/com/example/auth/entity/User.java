@@ -18,8 +18,8 @@ public class User {
     @Column(unique = true)
     private String email;
 
-    @Column(name = "password_hash", nullable = false)
-    private String passwordHash;
+    @Column(name = "password_encrypted", nullable = false)
+    private String passwordEncrypted;
 
     @Column(nullable = false)
     private int failedAttempts;
@@ -31,9 +31,9 @@ public class User {
 
     public User() {}
 
-    public User(String email, String passwordHash) {
+    public User(String email, String passwordEncrypted) {
         this.email = email;
-        this.passwordHash = passwordHash;
+        this.passwordEncrypted = passwordEncrypted;
         this.failedAttempts = 0;
         this.createdAt = LocalDateTime.now();
     }

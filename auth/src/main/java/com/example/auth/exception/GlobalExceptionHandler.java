@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -46,6 +47,17 @@ public class GlobalExceptionHandler {
             HttpServletRequest request) {
 
         return buildResponse(HttpStatus.CONFLICT, ex.getMessage(), request);
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<Map<String, Object>> handleUnreadableBody(
+            HttpMessageNotReadableException ex,
+            HttpServletRequest request) {
+
+        String message = ex.getMostSpecificCause() == null
+                ? "Payload JSON invalide"
+                : "Payload JSON invalide";
+        return buildResponse(HttpStatus.BAD_REQUEST, message, request);
     }
 
     private ResponseEntity<Map<String, Object>> buildResponse(

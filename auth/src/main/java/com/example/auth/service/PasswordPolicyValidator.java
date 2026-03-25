@@ -2,31 +2,20 @@ package com.example.auth.service;
 
 public final class PasswordPolicyValidator {
 
+    private static final int MIN_LENGTH = 12;
+
     private PasswordPolicyValidator() {}
 
     public static boolean isValid(String password) {
-        if (password == null || password.length() < 12) {
+        if (password == null || password.length() < MIN_LENGTH) {
             return false;
         }
 
-        boolean hasUpper = false;
-        boolean hasLower = false;
-        boolean hasDigit = false;
-        boolean hasSpecial = false;
-
-        for (char c : password.toCharArray()) {
-            if (Character.isUpperCase(c)) {
-                hasUpper = true;
-            } else if (Character.isLowerCase(c)) {
-                hasLower = true;
-            } else if (Character.isDigit(c)) {
-                hasDigit = true;
-            } else {
-                hasSpecial = true;
-            }
-        }
+        boolean hasUpper = password.chars().anyMatch(Character::isUpperCase);
+        boolean hasLower = password.chars().anyMatch(Character::isLowerCase);
+        boolean hasDigit = password.chars().anyMatch(Character::isDigit);
+        boolean hasSpecial = password.chars().anyMatch(ch -> !Character.isLetterOrDigit(ch));
 
         return hasUpper && hasLower && hasDigit && hasSpecial;
     }
 }
-

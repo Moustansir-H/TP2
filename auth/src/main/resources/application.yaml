@@ -16,3 +16,10 @@ spring:
     console:
       enabled: true
       path: /h2-console
+
+auth:
+  security:
+    server-master-key: tp3-demo-server-master-key
+    timestamp-window-seconds: 60
+    nonce-ttl-seconds: 120
+    token-ttl-seconds: 900

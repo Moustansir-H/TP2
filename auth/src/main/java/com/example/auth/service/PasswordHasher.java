@@ -13,6 +13,7 @@ public final class PasswordHasher {
     private static final int ITERATIONS = 65_536;
     private static final int KEY_LENGTH_BITS = 256;
     private static final int SALT_LENGTH_BYTES = 16;
+    private static final SecureRandom SECURE_RANDOM = new SecureRandom();
 
     private PasswordHasher() {}
 
@@ -22,7 +23,7 @@ public final class PasswordHasher {
         }
 
         byte[] salt = new byte[SALT_LENGTH_BYTES];
-        new SecureRandom().nextBytes(salt);
+        SECURE_RANDOM.nextBytes(salt);
 
         byte[] derived = derive(password.toCharArray(), salt, ITERATIONS, KEY_LENGTH_BITS);
         return "pbkdf2$" + ITERATIONS + "$"
